@@ -1,0 +1,244 @@
+body {
+	padding-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 14px;
+}
+.categories {
+	font-size: 12px;
+	text-align: center;
+	color: #5f5c5c;
+}
+
+/*bg video css*/
+
+.bose {
+	min-height: 450px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+.ct-bg {
+	min-height: 450px;
+	background: url(../image/bg.jpeg) center #000 no-repeat;
+	color: #fff;
+	text-align: center;
+}
+.heading {	
+	font-weight: 800;
+	font-size: 50px;
+	margin-top: 150px;
+
+}
+.discription {
+	width: 60%;
+	margin: auto auto;
+	font-size: 21px;
+}
+.lm-btn {
+	margin-top: 20px;
+	padding: 15px 30px
+}
+/*end bg video css*/
+
+/*call_to_action*/
+.call_to_action {
+	padding: 3%;
+	text-align: center;
+}
+.cl-heading {
+	font-weight: 800;
+	font-size: 36px;
+}
+.cl-discription {
+	width: 50%;
+	font-size: 21px;
+	margin: auto auto;
+}
+/*end call_to_action*/
+
+/*hr*/
+.hr-action {
+	width: 200px;
+	color: #000000;
+}
+/*end hr*/
+
+/*Gallery*/
+.snp-gallery{
+	padding: 2% 0%;
+}
+.snp-gl-fix {
+	padding: 0;
+	text-align: center;
+    background-color: #f5f5f5;
+}
+.gallery {
+	padding: 2% 0%;
+	text-align: center;
+}
+.gl-fix {
+	padding: 0;
+	
+    text-align: center;
+    background-color: #f5f5f5;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    border-bottom: 3px solid #eeeeee;
+    position: relative;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gl-fix img {
+	height: 250px;
+}
+.gl-fix h4 {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 700;
+}
+.view-btn {
+	margin:  3%;
+}
+.gt-btn {
+	padding-top: 20px;
+}
+
+
+.cp-fix {
+    margin-bottom:  10px;
+    color: #f5f5f5;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.user {
+	background-color: #f5f5f5;
+	text-align: left;
+	   
+   padding: 2%;
+}
+/*End Gallery*/
+
+/*About*/
+.about {
+	padding: 3%;
+	background-color: #eee;
+	margin: auto auto;
+}
+.al-discription {
+	text-align: justify;
+	width: 80%;
+	float: right;
+}
+.hire {
+	text-align: center;
+}
+/*End about*/
+
+/*footer*/
+footer {
+	padding: 3%;
+	text-align: center;
+	background-color: #34495e;
+	color: #fff;
+}
+
+.download-links {
+	margin: auto auto;
+	display: inline;
+	text-align: center;
+}
+.icon-gt {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 12px;
+	background-color: #333;
+}
+.icon-tw {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 11px;
+	background-color: #6ACFF4;
+}
+.icon-fb {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 13px;
+	background-color: #3B5998;
+}
+.icon-g {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 9px;
+	background-color: #e84552;
+}
+
+/*icon hover*/
+.icon-gt:hover {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 12px;
+	background-color: #000;
+}
+.icon-tw:hover {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 11px;
+	background-color: #0D95E8;
+}
+.icon-fb:hover {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 13px;
+	background-color: #344E86;
+}
+.icon-g:hover {
+	border-radius: 20px;
+	color: #fff;
+	padding: 10px 9px;
+	background-color: #D73925;
+}
+.ft-discription {
+	width: 60%;
+	font-size: 16px;
+	margin: auto auto;
+}
+
+/*single page css*/
+.krefolio {
+	padding: 2%;
+	background-color: #333;
+	color: #fff;
+	padding-left: 9%;
+}
+.kf-discription {
+	font-weight: 400;
+}
+	
+
+.download-links {
+	width: 100%;
+	
+}
+
+.krefolio-discription {
+	text-align: left;
+	background-color: #eee;
+	padding: 4%;
+	font-weight: 400;
+	margin-bottom: 2%;
+}
+.krefolio-feature {
+	text-align: left;
+	background-color: #eee;
+	padding: 4%;
+	font-weight: 400;
+}
+.github-icon {
+	margin-top: 10px;
+}
