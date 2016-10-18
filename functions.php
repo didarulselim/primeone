@@ -39,4 +39,5 @@ function create_book_tax() {
 			'hierarchical' => true,
 		)
 	);
+	
 }
