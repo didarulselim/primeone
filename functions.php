@@ -8,6 +8,10 @@ register_nav_menus( array(
 // Register Custom Navigation Walker
 require_once('wp_bootstrap_navwalker.php');
 
+//thumbnail suppor
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'template-thumb', 358, 250 );
+
 // template post type intiation
 
 add_action( 'init', 'primeone_create_posttype' );
@@ -20,7 +24,9 @@ function primeone_create_posttype() {
       ),
       'public' => true,
       'has_archive' => true,
-      'rewrite' => array('slug' => 'templates'),
+        'supports' => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'custom-fields'),
+
+        'rewrite' => array('slug' => 'templates'),
     )
   );
 }
