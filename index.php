@@ -19,7 +19,29 @@
     $(document).ready(function() {
 
       $(".bose").bose({
-        images : [ "<?php echo get_template_directory_uri() ?>/image/slider-1.jpg", "<?php echo get_template_directory_uri() ?>/image/slider-2.jpg", "<?php echo get_template_directory_uri() ?>/image/slider-3.jpg"],
+        images : [
+            <?php
+            // the query
+            $the_query1 = new WP_Query( array( 'post_type' => 'template', 'posts_per_page' => 5 ) ); ?>
+
+            <?php if ( $the_query1->have_posts() ) : ?>
+
+            <!-- pagination here -->
+
+            <!-- the loop -->
+            <?php while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
+            "<?php the_post_thumbnail_url( 'template-slider' );  ?>",
+        <?php endwhile; ?>
+        <!-- end of the loop -->
+
+        <!-- pagination here -->
+
+        <?php wp_reset_postdata(); ?>
+
+        <?php else : ?>
+            "<?php echo get_template_directory_uri() ?>/image/slider-1.jpg"
+        <?php endif; ?>
+        ],
         
 
       });
@@ -47,7 +69,7 @@
 
                 <?php
                 // the query
-                $the_query = new WP_Query( array( 'post_type' => 'template' ) ); ?>
+                $the_query = new WP_Query( array( 'post_type' => 'template', 'posts_per_page' => 9 ) ); ?>
 
                 <?php if ( $the_query->have_posts() ) : ?>
 

@@ -11,6 +11,7 @@ require_once('wp_bootstrap_navwalker.php');
 //thumbnail suppor
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'template-thumb', 358, 250 );
+add_image_size( 'template-slider', 1400, 450 );
 
 // template post type intiation
 
