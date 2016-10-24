@@ -1,11 +1,12 @@
 <?php get_header();?>
     <!-- Home -->
-
+	<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_hero_h = $titan->getOption( 'po_hero_h' );?>
     <section class="container-fluid  bose" id="Home">
     	<div class="row">
     		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     			<h2 class="heading">
-    				Distributed with <3 from GitHub
+    				<?php echo  $po_hero_h?>
     			</h2>
     			<p class="discription">CrackHTML is a free html template download platform for building simple and beautiful websites. Download, clone from GitHub, edit the text and add your own photo to make it your own.
     			</p>

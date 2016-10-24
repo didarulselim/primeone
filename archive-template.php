@@ -20,27 +20,9 @@
 
             $(".bose").bose({
                 images : [
-                    <?php
-                    // the query
-                    $the_query1 = new WP_Query( array( 'post_type' => 'template', 'posts_per_page' => 5 ) ); ?>
 
-                    <?php if ( $the_query1->have_posts() ) : ?>
-
-                    <!-- pagination here -->
-
-                    <!-- the loop -->
-                    <?php while ( $the_query1->have_posts() ) : $the_query1->the_post(); ?>
-                    "<?php the_post_thumbnail_url( 'template-slider' );  ?>",
-                    <?php endwhile; ?>
-                    <!-- end of the loop -->
-
-                    <!-- pagination here -->
-
-                    <?php wp_reset_postdata(); ?>
-
-                    <?php else : ?>
                     "<?php echo get_template_directory_uri() ?>/image/slider-1.jpg"
-                    <?php endif; ?>
+
                 ],
 
 
@@ -52,7 +34,7 @@
     <section class="container-fluid call_to_action" id="call_to_action">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h2 class="cl-heading"><?php single_cat_title(); ?></h2>
+                <h2 class="cl-heading"><?php if(is_category()){ single_cat_title();} else{ echo "All";} ?> Templates</h2>
                 <p class="cl-discription">
                     Brand Bootstrap is a collection of <b>free to download Bootstrap themes and templates.</b> Our themes are open source and you can use them for any purpose, even comercially!</p>
             </div>

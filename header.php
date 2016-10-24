@@ -28,6 +28,7 @@
     <script src="<?php echo get_template_directory_uri() ?>/js/bootstrap.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <script src="<?php echo get_template_directory_uri() ?>/js/bose.slider.js"></script>
+    <?php wp_head();?>
 </head>
 <body>
 <header>
@@ -41,7 +42,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo home_url();?>">Brand Bootstrap</a>
+				<?php $titan = TitanFramework::getInstance( 'primeone' );
+					$po_brand = $titan->getOption( 'po_brand' );?>
+                <a class="navbar-brand" href="<?php echo home_url();?>"><?php echo $po_brand ;?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
