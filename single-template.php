@@ -35,9 +35,16 @@
 					</ul>
 
 				</div>
+				<?php $titan = TitanFramework::getInstance( 'primeone' );
+$po_git_meta_repo = $titan->getOption( 'po_git_meta_repo', get_the_ID() );?>
                 <div class="user">
-                         <h3><?php the_title();?></h3>
-                    <p>An nepage template</p>
+				
+				
+				
+                         <h3> <?php echo  $po_git_meta_repo?></h3>
+                    <p><?php $titan = TitanFramework::getInstance( 'primeone' );
+$po_meta_sd = $titan->getOption( 'po_meta_sd', get_the_ID() );?></p>
+<?php echo  $po_meta_sd?>
                      </div>
 
                 </div>

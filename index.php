@@ -8,9 +8,17 @@
     			<h2 class="heading">
     				<?php echo  $po_hero_h?>
     			</h2>
-    			<p class="discription">CrackHTML is a free html template download platform for building simple and beautiful websites. Download, clone from GitHub, edit the text and add your own photo to make it your own.
+				<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_hero_p = $titan->getOption( 'po_hero_p' );?>
+    			<p class="discription"><?php echo  $po_hero_p?>
     			</p>
-    				<a href="#call_to_action" class="btn btn-lg btn-default lm-btn">Learn more</a>
+				
+				<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_hero_bt= $titan->getOption( 'po_hero_bt' );?>
+	
+	<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_hero_ba= $titan->getOption( 'po_hero_ba' );?>
+    				<a href="#call_to_action" class="btn btn-lg btn-default lm-btn"><?php echo  $po_hero_bt?></a>
     			
     		</div>
     	</div>
@@ -50,13 +58,18 @@
     });
   </script>
     <!-- call to action -->
+	<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_op_h= $titan->getOption( 'po_op_h' );?>
     <section class="container-fluid call_to_action" id="call_to_action">
     	<div class="row">
     		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="cl-heading">Forever free, open source, and easy to use.</h2>
+            
+			<h2 class="cl-heading"><?php echo  $po_op_h?>
+			</h2>
+				<?php $titan = TitanFramework::getInstance( 'primeone' );
+	$po_op_d= $titan->getOption( 'po_op_d' );?>
             <p class="cl-discription">
-				Brand Bootstrap is a collection of <b>free to download Bootstrap themes and templates.</b> Our themes are open source and you can use them for any purpose, even comercially!</p>
-          </div>
+				<?php echo  $po_op_d?>
     	</div>
     </section>
     <!-- end call to action -->

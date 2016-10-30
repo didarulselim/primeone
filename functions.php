@@ -155,7 +155,7 @@ $generaltab = $panel->createTab( array(
         'desc' => 'Open Source Gihub Repo Name Exactly',
     ) );
     $metaBox->createOption( array(
-        'name' => 'Sort Descreaption',
+        'name' => 'Sort Description',
         'id' => 'po_meta_sd',
         'type' => 'text',
         'desc' => 'Short Descreaption of the template.',
